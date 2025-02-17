@@ -1,0 +1,240 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+#FakeHeader{
+    height: 10vh;
+    width: 100vw;
+}
+.header{
+    height: 10vh;
+    width: 100vw;
+    color: whitesmoke;
+    background-color:rgb(2, 45, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    position: fixed;
+    z-index: 10;
+}
+#Logo{
+    height: 8vh;
+    width: 4vw;
+    background-color: rgb(2, 45, 83);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px double white;
+}
+.itemsHead{
+    height: 10vh;
+    width: 100%;
+    font-size: 6vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    color:rgb(2, 45, 83);
+    text-shadow: rgb(167, 196, 220) 2px 2px;
+}
+.BigContainer{
+    height: 100vh;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 35vh;
+    box-sizing: border-box;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+.item{
+    height: 100%;
+    width: 30%;
+    border: 1px solid rgb(2, 45, 83);
+    background-color: rgb(2, 45, 83);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow:rgb(2, 45, 83) 1px 1px 6px 0.3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.itemImage{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit:contain;
+    position: absolute;
+}
+.blackDiv{
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    border-bottom-style:groove;
+    opacity: 0.6;
+    position: absolute;
+    margin-bottom: 1%;
+}
+.itemInfo{
+    height: 20%;
+    width: 100%;
+    font-size: 35px;
+    color: rgb(2, 45, 83);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-shadow: rgb(209, 213, 219) 2px 2px;
+    z-index: 8;
+    &:hover{
+           font-size: 40px ;
+           transition:all 0.3s ease-in-out;
+    }
+}
+/* #square{
+    height: 100px;
+    width:  100px;
+    color: white;
+    background-color: rgb(2, 45, 83);
+    margin-top: 67vh;
+    margin-left: 87vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rotateSqaure;
+    animation: rotateSqaure 10s linear 0.2s infinite normal; 
+    position: fixed; 
+    border: 10px double white; 
+
+}
+@keyframes rotateSqaure{
+    form{
+        rotate:0deg;
+    } 
+    to{
+        rotate:360deg;
+    }
+}
+#subSquare{
+    height: 50px;
+    width:  50px;
+    color: white;
+    background-color: rgb(2, 45, 83);
+    animation-name: rotatesubSqaure;
+    animation: rotatesubSqaure 10s linear 0.2s infinite normal; 
+    /* position: fixed;  */
+    /* border: 10px double white;  */
+    
+/* &:hover{
+    transform: rotate(45deg); 
+    transition: all 1s;
+ } */
+/* }
+@keyframes rotatesubSqaure{
+    form{
+        rotate:0deg;
+    } 
+    to{
+        rotate:-360deg;
+    }
+} */ 
+
+@media(max-width:600px){
+    .BigContainer{ 
+        height: 100%;
+        width: 100%;
+       }
+    .container{
+        height: 72vh;
+        width: 80vw;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        /* background-color: red; */
+        margin-left: 10vw;
+    }
+    .item{
+        height:30vh;
+        width: 80vw;
+        border: 1px solid rgb(2, 45, 83);
+        background-color: rgb(2, 45, 83);
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow:rgb(2, 45, 83) 1px 1px 6px 0.3px;
+        overflow: hidden;
+    }
+    .itemImage{
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit:contain;
+        position: absolute;
+    }
+    #Logo{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(2, 45, 83);
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 5px double white;
+    }
+    .filterButton{
+        text-shadow: rgb(184, 204, 221) 0.1px 0.1px ;
+    }
+    
+}
+#menuHead{
+    color:rgb(2, 45, 83);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    margin: 10px;
+    text-shadow: rgb(167, 196, 220) 1px 1px ;
+    border: 2px solid rgb(2, 45, 83) ;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+#line{
+    height: 2px;
+    width: 100vw;
+    background-color: rgb(2, 45, 83);
+    margin-top: 5px;
+}
+.menuHeadContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filterButton{
+    color: rgb(2, 45, 83);
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid rgb(2, 45, 83);
+    padding: 5px;
+    border-radius: 8px;
+    text-shadow: rgb(184, 204, 221) 0.5px 0.5px ;
+    &:hover{
+        background-color: rgb(2, 45, 83);
+        color: white;
+    }
+}
+.filterButtons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 10px;
+}
