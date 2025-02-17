@@ -7,6 +7,12 @@ html,body{
     margin: 0%;
     overflow-x: hidden;
 }
+a{  color: rgb(2, 45, 83);
+    text-decoration: none;
+    &:hover{
+        color: white;
+    }
+}
 #FakeHeader{
     height: 10vh;
     width: 100vw;
