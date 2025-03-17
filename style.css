@@ -3,9 +3,19 @@
     padding: 0%;
 }
 html,body{
+    height: 100%;
+    width: 100%;
     padding: 0%;
     margin: 0%;
     overflow-x: hidden;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+#FakeHeader{
+    height: 11%;
+    min-width: 100vw;
 }
 a{  color: rgb(2, 45, 83);
     text-decoration: none;
@@ -13,34 +23,33 @@ a{  color: rgb(2, 45, 83);
         color: white;
     }
 }
-#FakeHeader{
-    height: 10vh;
-    width: 100vw;
-}
 .header{
-    height: 10vh;
+    height: 11%;
     width: 100vw;
     color: whitesmoke;
     background-color:rgb(2, 45, 83);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 1.5rem;
     position: fixed;
     z-index: 10;
 }
+#name{
+    font-size: 34px;
+}
 #Logo{
-    height: 8vh;
-    width: 4vw;
+    height: 80%;
+    width: 4%;
     background-color: rgb(2, 45, 83);
     border-radius: 50%;
     box-sizing: border-box;
     border: 10px double white;
 }
 .itemsHead{
-    height: 10vh;
+    height: 10%;
     width: 100%;
-    font-size: 6vh;
+    font-size:50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
@@ -49,15 +58,13 @@ a{  color: rgb(2, 45, 83);
     text-shadow: rgb(167, 196, 220) 2px 2px;
 }
 .BigContainer{
-    height: 100vh;
+    height: 95%;
     width: 100%;
-    background-repeat:no-repeat;
-    background-size: cover;
 }
 .container{
-    height: 35vh;
+    height: 36%;
     box-sizing: border-box;
-    margin-top: 5vh;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 5vh;
@@ -157,16 +164,19 @@ a{  color: rgb(2, 45, 83);
 
 @media(max-width:600px){
     .BigContainer{ 
-        height: 100%;
+        padding: 0%;
+        height: 170%;
         width: 100%;
+        background-color: red;
+        border-bottom: 5px solid black;
        }
     .container{
-        height: 72vh;
+        height: 37%;
         width: 80vw;
         box-sizing: border-box;
         flex-wrap: wrap;
-        /* background-color: red; */
-        margin-left: 10vw;
+        gap: 30px;
+        margin-left: 10%;
     }
     .item{
         height:30vh;
@@ -196,7 +206,17 @@ a{  color: rgb(2, 45, 83);
     .filterButton{
         text-shadow: rgb(184, 204, 221) 0.1px 0.1px ;
     }
-    
+    .itemsHead{
+        height: 5%;
+        width: 100%;
+        font-size:50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        color:rgb(2, 45, 83);
+        text-shadow: rgb(167, 196, 220) 2px 2px;
+    }   
 }
 #menuHead{
     color:rgb(2, 45, 83);
