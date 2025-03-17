@@ -2,30 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="header">
+<div class="header">
         <div id="Logo" ></div>
-        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">RESTAURANT & CAFE</h1>
-    </div>
-    <div id="FakeHeader"></div>
+        <a href="#FakeHeader"><button style="background-color: transparent; border: none; color: white;"><p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" id="name">RESTAURANT & CAFE</p></button></a>
+</div>
+<div id="FakeHeader"></div>
+<div style="height: 4.5%;">
     <div id="line"></div>  
     <div class="menuHeadContainer">
         <h1 id="menuHead">Our Menu</h1>
         <div class="filterButtons">
-           <button class="filterButton" id="all"><a href="#menuHead">All</a></button>
-           <button class="filterButton" id="Italian"><a href="#italianFood">Italian</a></button>
-           <button class="filterButton" id="Chinese"><a href="#chineeseFood">Chinese</a></button>
-           <button class="filterButton" id="Indian"><a href="#indianFood">Indian</a></button>
+           <a href="#menuHead"><button class="filterButton" id="all">All</button></a>
+           <a href="#italianFood"><button class="filterButton" id="Italian">Italian</button></a>
+           <a href="#chineeseFood"><button class="filterButton" id="Chinese">Chinese</button></a>
+           <a href="#indianFood"><button class="filterButton" id="Indian">Indian</button></a>
         </div>
     </div>
-    
-    <div id="filters"></div>
-    
+    <div id="filters"></div> 
+</div>
 <div class="BigContainer">
    <div class="itemsHead" id="italianFood"><u>Italian Food</u></div>
     
@@ -75,7 +74,6 @@
         </div>
     </div>
 </div>
-
 <div class="BigContainer"> 
    <div class="itemsHead" id="indianFood"><u>Indian Food</u></div>
     
